@@ -6,4 +6,9 @@ class Hotel
     @rooms = {}
     rooms.each {|k,v| @rooms[k]= Room.new(rooms[k])}
   end
+
+  def name
+    @name.split.each(&:capitalize!).join(" ")
+  end
+
 end
