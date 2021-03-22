@@ -35,4 +35,8 @@ class Hotel
   def has_vacancy?
     @rooms.values.any? {|room| !room.full?}
   end
+
+  def list_rooms
+    @rooms.each {|name,room| puts "#{name}: #{room.available_space}"}
+  end
 end
