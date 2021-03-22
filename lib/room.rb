@@ -1,7 +1,6 @@
 class Room
   def initialize(capacity)
-    @capacity = capacity
-    @occupants = Array.new()
+    @capacity =  capacity
   end
 
 end
