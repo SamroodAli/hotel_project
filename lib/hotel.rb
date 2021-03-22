@@ -31,4 +31,8 @@ class Hotel
       return false
     end
   end
+
+  def has_vacancy?
+    @rooms.values.any? {|room| !room.full?}
+  end
 end
