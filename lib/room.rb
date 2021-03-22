@@ -20,5 +20,13 @@ class Room
     @capacity - @occupants.length
   end
 
+  def add_occupant(name)
+    if full?
+      return false
+    else
+      @occupants << name
+      return true
+    end
+  end
 end
 
